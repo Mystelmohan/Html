@@ -1,0 +1,31 @@
+.outer{
+width:400px;
+height:600px;
+border:3px solid black;
+border-radius:10px;
+background-color:gray;
+}
+#textbar{
+	margin-top:20px;
+	width:350px;
+	height:100px;
+	border-radius:10px;
+	border:3px solid black;
+	font-size:50px;
+	background-color:lightgray;
+	text-align:right;
+}
+.button{
+	width:80px;
+	height:65px;
+	font-size:50px;
+	border-radius:10px;
+	background-color:lightblue;
+	margin-top:20px;
+	
+}
+#sym{
+	padding-bottom:20px;
+	padding-top:1px;
+	
+}

@@ -1,0 +1,99 @@
+<html>
+<head>
+<link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+<div class='nav'>
+<img src='dog.png'>
+<h1>PetShop</h1>
+<input type='text' placeholder='search'>
+<button>&#128269 </button>
+<div class='cont'>
+<a href='#home' id='link'>Home</a>
+<a href='#contact' id='link1'>Contact</a>
+<a href='login.html'>User</a>
+</div>
+</div>
+<div id='info1'>
+<center><h1 class='heading'>Popular Categories</h1></center>
+<div class='galery'>
+
+<div class='item'>
+<img src='pedegree.jpg'>
+<center><a href='dogfood.html  '>Dog Food</a></center>
+</div>
+
+<div class='item'>
+<img src='cat.jpg'>
+<center><a href='catfood.html'>Cat Food</a></center>
+</div>
+
+<div class='item'>
+<img src='health.png'>
+<center><a href='#dogfood'>HealthCare</a></center>
+</div>
+
+<div class='item'>
+<img src='treatdog.jpg'>
+<center><a href='#dogfood'>Dog Treats</a></center>
+</div>
+
+<div class='item'>
+<img src='cattreat.jpg'>
+<center><a href='#dogfood'>Cat Treats</a></center>
+</div>
+</div>
+
+
+<div class='galery2'>
+
+<div class='item'>
+<img src='litter.jpg'>
+<center><a href='#dogfood'>LitterSupplies</a></center>
+</div>
+
+<div class='item'>
+<img src='toys.png'>
+<center><a href='#dogfood'>Toys</a></center>
+</div>
+
+<div class='item'>
+<img src='rope.jpg'>
+<center><a href='#dogfood' >WalkEssentials</a></center>
+</div>
+
+<div class='item'>
+<img src='groom.jpg'>
+<center><a href='#dogfood'>Grooming</a></center>
+</div>
+
+<div class='item'>
+<img style='width:150px;padding-left:30px;' src='bed.jpg'>
+<center><a href='#dogfood'>Bedding</a></center>
+</div>
+</div>
+</div>
+
+<div id='info2' style='display:none;'>
+<div class='con'>
+<center><h1>Contact</h1><center>
+<center><input type='text' placeholder='Full Name'>
+<input type='text' placeholder='Email address' class='inp'><br/>
+<input type='text' placeholder='Number'>
+<input type='text' placeholder='Email Subject' class='inp'><br/>
+<center><textarea placeholder='message' id='textarea'></textarea></center>
+<center><button>Submit</button></center>
+</div>
+</div>
+<script>
+document.getElementById("link").addEventListener("click",function(){
+document.getElementById("info2").style.display="none";
+document.getElementById("info1").style.display="block";
+});
+document.getElementById("link1").addEventListener("click",function(){
+document.getElementById("info1").style.display="none";
+document.getElementById("info2").style.display="block";
+});
+</script>
+</body>
+</html>

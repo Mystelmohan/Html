@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>calculator</title>
+<link rel='stylesheet' href='styles.css'>
+<script>
+function solve(val){
+var v=document.getElementById('textbar');
+v.value+=val;
+}
+function result(){
+var num1=document.getElementById('textbar').value;
+var num2=eval(num1);
+document.getElementById('textbar').value=num2;
+}
+function Clear(){
+var cl=document.getElementById('textbar');
+cl.value = '';
+}
+function erase(){
+var ev=document.getElementById('textbar');
+ev.value=ev.value.slice(0,-1);
+}
+</script>
+</head>
+
+<body>
+<center>
+<div class='outer'>
+<table>
+<tr>
+<td colspan='4'>
+<input type='text' id='textbar'>
+</td>
+</tr>
+<tr>
+<td>
+<input type='button' value='C' class='button' onclick=Clear()></td>
+<td>
+<input type='button' value='%' class='button' onclick=solve('%')></td>
+<td>
+<input type='button' value='&#9003' class='button' id='sym' onclick=erase()></td>
+<td>
+<input type='button' value='/' class='button'onclick=solve('/')></td></tr>
+<tr>
+<td>
+<input type='button' value='7' class='button' onclick=solve('7')></td>
+<td>
+<input type='button' value='8' class='button' onclick=solve('8')></td>
+<td>
+<input type='button' value='9' class='button' onclick=solve('9')></td>
+<td>
+<input type='button' value='x' class='button' onclick=solve('*')></td></tr>
+<tr>
+<td>
+<input type='button' value='4' class='button' onclick=solve('4')></td>
+<td>
+<input type='button' value='5' class='button' onclick=solve('5')></td>
+<td>
+<input type='button' value='6' class='button' onclick=solve('6')></td>
+<td>
+<input type='button' value='-' class='button' onclick=solve('-')></td></tr>
+<tr>
+<td>
+<input type='button' value='1' class='button' onclick=solve('1')></td>
+<td>
+<input type='button' value='2' class='button' onclick=solve('2')></td>
+<td>
+<input type='button' value='3' class='button' onclick=solve('3')></td>
+<td>
+<input type='button' value='+' class='button' onclick=solve('+')></td></tr>
+<tr>
+<td>
+<input type='button' value='00' class='button' onclick=solve('00')></td>
+<td>
+<input type='button' value='0' class='button' onclick=solve('0')></td>
+<td>
+<input type='button' value='.' class='button' onclick=solve('.')></td>
+<td>
+<input type='button' value='=' class='button' style='background-color:lightgreen' onclick=result()></td></tr>
+</table>
+</div>
+</center>
+</body>
+</html>

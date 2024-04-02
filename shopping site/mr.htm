@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>welcome</title>
+<link rel="icon" type="image/png" sizes='32x32' href="/favicon-32x32.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel="stylesheet" 
+href="styles.css">
+
+</head>
+<body>
+<div class='topnav'>
+<h1>DShop</h1>
+<a class='btn active' href='#home' id="link">Home</a>
+<a class='btn' href='#contact'id="link1" >Contact</a>
+<a class='bth' href='#about' >About</a>
+<input type='text' placeholder='search...'>
+</div>
+
+<div id='info1'>
+
+<div class='galery'>
+<div class='content' >
+<a href='iphone.html'></a>
+<img src='iphone14.png'>
+<h3>Iphone</h3>
+<p>the great deals on iphone products</p>
+<h3>Rs.89999</h3>
+<ul>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class='fa fa-star checked'></i></li>
+</ul>
+<a href='iphone.html'><button class='buy'>Buy Now</button></a>
+</div>
+
+<div class='content'>
+<img src='shoe.png'>
+<h3>Shoes</h3>
+<p>the great deals on shoes</p>
+<h3>Rs.2999</h3>
+<ul>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class='fa fa-star'></i></li>
+</ul>
+<a href='shoe.html'><button class='buy'>Buy Now</button></a>
+</div>
+
+<div class='content'>
+<img src='headphones.png'>
+<h3>Headphones</h3>
+<p>the great deals on headphones</p>
+<h3>Rs.1999</h3>
+<ul>
+<li><i class='fa fa-star checked'></i></li>
+<li><i class='fa fa-star checked'></i></li>
+<li><i class='fa fa-star checked'></i></li>
+<li><i class='fa fa-star'></i></li>
+<li><i class='fa fa-star'></i></li>
+</ul>
+<a href='headphone.html'><button class='buy'>Buy Now</button></a>
+</div>
+
+<div class='content'>
+<img src='watch.png'>
+<h3>watches</h3>
+<p>the great deals on smart watches</p>
+<h3>Rs.4999</h3>
+<ul>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class='fa fa-star'></i></li>
+</ul>
+<a href='watch.html'><button class='buy'>Buy Now</button></a>
+</div>
+</div>
+</div >
+
+<div id='info2' style='display:none;'>
+<div class='con'>
+<h1>Contact</h1>
+<input type='text' placeholder='Full Name'>
+<input type='text' placeholder='Email address'><br/>
+<input type='text' placeholder='Number'>
+<input type='text' placeholder='Email Subject'><br/>
+<textarea placeholder='message' id='textarea'></textarea>
+<button>Submit</button>
+</div>
+</div>
+<script>
+document.getElementById("link").addEventListener("click",function(){
+document.getElementById("info2").style.display="none";
+document.getElementById("info1").style.display="block";
+});
+document.getElementById("link1").addEventListener("click",function(){
+document.getElementById("info1").style.display="none";
+document.getElementById("info2").style.display="block";
+});
+</script>
+</body>
+</html>

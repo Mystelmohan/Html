@@ -1,0 +1,105 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function buy(){
+window.alert('Buying successfully');
+}
+</script>
+<style>
+.product{
+float:left;
+}
+
+img{
+width:400px;
+height:400px;
+position:absolute;
+left:100px;
+top:80px;
+}
+.image{
+height:100%;
+width:600px;
+background-color:lightgray;
+}
+.details{
+position:absolute;
+top:50px;
+left:650px;
+}
+h1{
+font-family:helvetica;
+font-size:40px;
+}
+p{
+font-size:25px;
+}
+.btn1{
+height:40px;
+width:200px;
+background-color:#2196f3; 
+color:white;
+cursor:pointer;
+border-radius:50px;
+outline:0;
+border:none;
+ margin-right:15px;
+font-size:20px;
+}
+.fa{
+	font-size:26px;
+	transition: .4s;
+}
+
+.checked{
+	color:orange;
+}
+
+.fa:hover{
+	transform:scale(1.3);
+	transition: .6s;
+}
+
+ul{
+	list-style:none;
+	display:flex;
+	padding:0;
+}
+
+li{
+	padding:5px;
+}
+#rat{
+font-size:26px;
+color:#2196f3;
+}
+</style>
+</head>
+<div class='product'>
+<div class='image'>
+<img src='headphones.png'>
+</div>
+<div class='details'>
+<h1>JBL</h1>
+<a href='#' style='font-size:18px;text-decoration:none;'>visit jbl store</a>
+<p style='font-family:helvetica;font-size:20px;'>JBL Tune760NC, wirelessover Ear Active Noise<br/>Cancellation Headphones with Mic, upto 50 Hours<br/>
+Playtime,Purebass,Dual Paring,AUX & Voice Assistant<br/>Support Mobile Phones.</p>
+<h2 style='font-size:35px;'><span style='color:green;font-size:26px'>16% off </span></br> Rs. 7,999.0</h2>
+<ul>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star checked'></i></li>
+<li><i class= 'fa fa-star'></i></li>
+<li><i class='fa fa-star '></i></li>
+<li id='rat'>78,828 ratings</li>
+</ul>
+<p style='font-size:20px'>No Cost EMI &#8377 499/month.<span style='color:blue;cursor:pointer'>View Plans</span></p>
+<p style='font-size:20px'><span style='color:green'>Free Deliver</span>|Delivery on next week</p>
+
+<button class='btn1' onclick='buy()'>BUY NOW</button>
+<button class='btn1'>Add to Cart</button>
+</div>
+</div>
+</body>
+</html>
